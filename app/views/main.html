@@ -1,0 +1,18 @@
+<section>
+    <ul class="list-group">
+        <li class="row list-group-item" ng-repeat="user in users">
+
+            <div class="col-md-2">{{user.name}}</div>
+            <div class="col-md-6">
+                <button ng-click="moreDetails(user)">More Details</button>
+                |
+                <button ng-click="edit(user)">Edit</button>
+
+                <div class="more-info" style="display: none" id="user-details{{user.id}}">
+                    Hobby: {{user.hobby}}
+                </div>
+            </div>
+
+        </li>
+    </ul>
+</section>
